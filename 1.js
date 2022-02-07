@@ -1,6 +1,6 @@
 /** @param {NS} ns **/export async function main(ns) {
 
-//welcome. 'port0' referes to servers with zero ports to open. all servers attack n00dles,until you modify it. aliases typed/paste in the terminal require " ". 
+//welcome. 'port0' referes to servers with zero ports to open. all servers attack n00dles,until you modify it. aliases typed/paste in the terminal require " ". hover over text in editor for comments & price.
 //	there's a lot of copy/paste that should be in an array. starting from fresh, this script gets to purchace brutessh.exe in 9 minutes but user must manually go shopping - recommended take course at uni.
 // purchsae upgrades(tor/home) and darkweb tools as soon as available, factions, user choice. mission:create/write the missing script. you have until you purchase SQLInject.exe.
 
@@ -18,25 +18,15 @@
 	await ns.write(files[8], "/** @param {NS} ns **/export async function main(ns) {var i = 0;{while(i<25){ns.killall('xHx-'+i);await ns.scp('n00dleshack.js','xHx-'+i);ns.exec('n00dleshack.js','xHx-'+i,(ns.getServerMaxRam('xHx-'+i)/2.4));++i;}}}", "w");
 	await ns.write(files[9],"/** @param {NS} ns **/export async function main(ns){ns.disableLog('ALL');var i = 0; while(i<25){ns.killall('xHx-' + i);ns.deleteServer('xHx-' + i);++i;}}","w");
 	await ns.write(files[10],"/** @param {NS} ns **/export async function main(ns) {ns.run('upserv.js');}","w")
-	await ns.write(files[11],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.print('make program to upgrade purchased servers from 8GB incrementing to maxGB, the program will be launched by launchupserv.js when you reach 11 million $ after the purchase of SQLInject. User is allotted 12GB on home server which will also accomodate launchupserv.js/pushserv.js unless not needed.","w");
+	await ns.write(files[11],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.print('make program to upgrade purchased servers from 8GB of incremental sets to maxGB, the program will be launched by launchupserv.js when you reach 11 million $ after the purchase of SQLInject. User is allotted 12GB on home server which will also accomodate launchupserv.js/pushserv.js unless not needed.","w");
 
-
+	ns.run('upserv.js');
 	ns.run('port0.js');
 	await ns.sleep(3000);
 	if (ns.getServerMaxRam('home') == 16) { ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 32) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 64) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 128) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 256) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 512) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 1024) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 2048) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 4096) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 8192) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 16384) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 32768) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 65536) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 131072) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 
 
 	if (ns.getServerMinSecurityLevel('n00dles') > (ns.getServerMinSecurityLevel('n00dles') + 2))
@@ -60,16 +50,8 @@
 	else if (ns.getServerMaxRam('home') == 32) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 64) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 128) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 256) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 512) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 1024) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 2048) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 4096) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 8192) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 16384) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 32768) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 65536) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 131072) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
+	
+	
 	await ns.sleep(5000);
 	while (!ns.fileExists('FTPCrack.exe', 'home')) {
 		if (ns.getServerMinSecurityLevel('n00dles') > (ns.getServerMinSecurityLevel('n00dles') + 2))
@@ -84,16 +66,6 @@
 	else if (ns.getServerMaxRam('home') == 32) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 64) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 128) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 256) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 512) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 1024) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 2048) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 4096) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 8192) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 16384) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 32768) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 65536) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 131072) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 
 	await ns.sleep(5000);
 	while (!ns.fileExists('relaySMTP.exe', 'home')) {
@@ -121,16 +93,6 @@
 	else if (ns.getServerMaxRam('home') == 32) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 64) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 128) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 256) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 512) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 1024) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 2048) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 4096) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 8192) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 16384) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 32768) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 65536) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 131072) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 
 	await ns.sleep(5000);
 	while (!ns.fileExists('SQLInject.exe', 'home')) {
@@ -146,19 +108,10 @@
 	else if (ns.getServerMaxRam('home') == 32) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 64) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
 	else if (ns.getServerMaxRam('home') == 128) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 256) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 512) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 1024) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 2048) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 4096) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 8192) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 16384) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 32768) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 65536) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
-	else if (ns.getServerMaxRam('home') == 131072) { ns.kill('n00dleshack.js', 'home'); ns.run('n00dleshack.js', (Math.floor((ns.getServerMaxRam('home') - 12) / 2.4))); }
+	
 
 
-if(getServerMoneyAvailable('home')>11000000 && !ns.fileExists('n00dleshack.js','xHx-24'))
+
 {
 	ns.run('launchupserv.js');
 	ns.exit	
