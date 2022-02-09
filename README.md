@@ -12,15 +12,15 @@ Rules:
   -completed 'upserv.js' needs to be under 10.20GB.
   
 Timeline:
-  -player action  -total elasped time
+  -player action  -total elasped time;
   
-  -purchase Tor - 4 min
-  -buy brute - 9 min
-  -upgrade home ram- 12 min
-  -buy FTPCrack - 17 min
-  -upgrade home ram - 24 min.
-  -buy relaySMTP - 32 min.
-  -upgrade home ram - 40 min.
+  -purchase Tor - 4 min;
+  -buy brute - 9 min;
+  -upgrade home ram- 12 min;
+  -buy FTPCrack - 17 min;
+  -upgrade home ram - 24 min.;
+  -buy relaySMTP - 32 min.;
+  -upgrade home ram - 40 min.;
   
  from this point, once you earn 11 million$(46 min. from start), the script 'upserv.js' will run and either crash the 'home' system, or, if you have resolved the issue, everything will run smoothly through the first set of milestones/augmentations.
   time up!
