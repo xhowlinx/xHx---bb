@@ -23,5 +23,5 @@ Timeline:
   -upgrade home ram - 40 min.;
   
  from this point, once you earn 11 million$(about 46 min. from start if the upgrades were followed), the script 'upserv.js' will run and either crash the 'home' system, or, if you have resolved the issue, everything will run smoothly through the first set of milestones/augmentations.
-  time up!
+  times up!
 
