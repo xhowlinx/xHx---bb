@@ -1,7 +1,7 @@
 /** @param {NS} ns **/export async function main(ns) {
 ns.tail();ns.disableLog('ALL');
 // Mini-game!! correct the file "upserv.js" before time runs out! Start with fresh game. Be sure to upgrade home ram and buy all the hacks from darkweb in order of availabilty. 
-//welcome. 'port0' refers to servers that require zero ports to open. alias has rebuy and root. pushserv pushes a script. upserv to upgrade purchased severs to max. launchupserv to avoid ram problems.
+//welcome. 'port0' refers to servers that require zero ports to open. alias has rebuy and root. pushserv pushes a script. upserv for incremental upgrade of purchased severs to max ram. launchupserv obsolete.
 //hover over text in editor for comments & price.
 
 	var files = ['port0.js', 'port1.js', 'port2.js', 'port3.js', 'port4.js', 'port5.js', 'n00dleshack.js', 'alias.js', 'pushserv.js','delserv.js','launchupserv.js','upserv.js','intro.js'];
