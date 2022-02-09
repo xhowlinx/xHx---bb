@@ -1,4 +1,4 @@
-# bitburner
+# Meat Me At the N00dle Shack!
 Meat me at the N00dle Shack!!
 a 4.10GB bitburner starting script/mini-game/?challenge?.
 
