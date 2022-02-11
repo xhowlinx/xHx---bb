@@ -41,6 +41,7 @@ while(!ns.serverExists('darkweb'))
 	ns.clearLog();
 	ns.tail();
 	ns.print('go City --> Alpha Ent. --> Purchase TOR Router');
+	ns.print('takes about 4 minutes.');
 	await ns.hack('n00dles');
 }
 
