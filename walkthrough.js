@@ -66,6 +66,7 @@ while(ns.getServerMaxRam('home')<16)
 	ns.clearLog();
 	ns.tail();
 	ns.print('go City --> Alpha Ent. --> Upgrade home RAM');
+	ns.print('at about 13.5 minutes.');
 	await ns.hack('n00dles');
 }
 
@@ -80,7 +81,9 @@ while(!ns.fileExists('Autolink.exe'))
 	ns.clearLog();
 	ns.tail();
 	ns.print('Connect Darkweb --> buy Autolink.exe');
+	ns.print('at about 18 minutes.');
 	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
+	ns.print('at around 21 minutes or level 60');
 	await ns.hack('n00dles');
 }
 
@@ -91,8 +94,10 @@ while(!ns.fileExists('FTPCrack.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy FTPCrack.exe');
 	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
+	ns.print('at around 21 minutes or level 60');
+	ns.print('Connect Darkweb --> buy FTPCrack.exe');
+	ns.print('at around 24 minutes');
 	await ns.hack('n00dles');
 }
 
@@ -106,7 +111,7 @@ if(!ns.serverExists('xHx-24'))
 		while(ns.getServerMoneyAvailable('home')<2750000)
 		{
 			ns.clearLog();
-			ns.print('.....waiting to buy 25 2GB servers.....');
+			ns.print('....acquiring 25 2GB servers.....');
 			await ns.sleep(5000);
 		}
 
@@ -143,7 +148,7 @@ if(ns.fileExists('HTTPWorm.exe'))await ns.sleep(5000);
 while(ns.getServerMoneyAvailable('home')<5500000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 4GB servers.....');
+	ns.print('.....acquiring 25 @ 4GB servers.....');
 	await ns.sleep(5000);
 }
 
@@ -167,7 +172,7 @@ if(ns.fileExists('HTTPWorm.exe'))await ns.sleep(5000);
 while(ns.getServerMoneyAvailable('home')<11000000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 8 GB servers.....');
+	ns.print('.....acquiring 25 @ 8 GB servers.....');
 	await ns.sleep(5000);
 }
 
@@ -178,7 +183,7 @@ ns.run('upserv.js');
 while(ns.getServerMoneyAvailable('home')<22000000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 16 GB servers.....');
+	ns.print('.....acquiring 25 @ 16 GB servers.....');
 	await ns.sleep(5000);
 }
 
@@ -214,7 +219,7 @@ if(ns.fileExists('SQLinject.exe'))await ns.sleep(5000);
 while(ns.getServerMoneyAvailable('home')<44000000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 32 GB servers.....');
+	ns.print('.....acquiring 25 @ 32 GB servers.....');
 	await ns.sleep(5000);
 }
 
@@ -225,7 +230,7 @@ ns.run('upserv.js');
 while(ns.getServerMoneyAvailable('home')<88000000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 64 GB servers.....');
+	ns.print('.....acquiring 25 @ 64 GB servers.....');
 	await ns.sleep(5000);
 }
 
@@ -249,7 +254,7 @@ if(ns.fileExists('SQLInject.exe'))await ns.sleep(5000);
 while(ns.getServerMoneyAvailable('home')<176000000)
 {
 	ns.clearLog();
-	ns.print('.....waiting to buy 25 @ 128 GB servers.....');
+	ns.print('.....acquiring 25 @ 128 GB servers.....');
 	await ns.sleep(5000);
 }
 
