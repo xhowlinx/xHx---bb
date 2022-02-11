@@ -88,7 +88,7 @@ while(!ns.fileExists('Autolink.exe'))
 	await ns.hack('n00dles');
 }
 
-//check for ns.ftpcrack and run when available
+//check for ns.ftpcrack and stall until available
 
 while(!ns.fileExists('FTPCrack.exe'))
 {
@@ -147,7 +147,7 @@ if(ns.fileExists('HTTPWorm.exe'))await ns.sleep(5000);
 
 //purchases 25 4GB servers once possible
 
-while(ns.getServerMoneyAvailable('home')<5500000)
+while((ns.getServerMaxRam('xHx-24')<4)&&(ns.getServerMoneyAvailable('home')<5500000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 4GB servers.....');
@@ -170,8 +170,7 @@ ns.run('pushhome.js');
 if(ns.fileExists('HTTPWorm.exe'))await ns.sleep(5000);
 
 
-while(ns.getServerMaxRam('xHx-24')==64)
-while(ns.getServerMoneyAvailable('home')<11000000)
+while((ns.getServerMaxRam('xHx-24')==4)&&(ns.getServerMoneyAvailable('home')<11000000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 8 GB servers.....');
@@ -182,7 +181,7 @@ ns.run('upserv.js');
 
 
 
-while(ns.getServerMoneyAvailable('home')<22000000)
+while((ns.getServerMaxRam('xHx-24')==8)&&(ns.getServerMoneyAvailable('home')<22000000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 16 GB servers.....');
@@ -218,7 +217,7 @@ if(ns.fileExists('SQLinject.exe'))await ns.sleep(5000);
 
 //upgrade purchaced servers and run more scripts
 
-while(ns.getServerMoneyAvailable('home')<44000000)
+while((ns.getServerMaxRam('xHx-24')==16)&&(ns.getServerMoneyAvailable('home')<44000000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 32 GB servers.....');
@@ -229,7 +228,7 @@ ns.run('upserv.js');
 
 //upgrade purchased servers and run more scripts
 
-while(ns.getServerMoneyAvailable('home')<88000000)
+while((ns.getServerMaxRam('xHx-24')==32)&&(ns.getServerMoneyAvailable('home')<88000000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 64 GB servers.....');
@@ -253,7 +252,7 @@ if(ns.fileExists('SQLInject.exe'))await ns.sleep(5000);
 
 //upgrade purchased servers and run more scripts
 
-while(ns.getServerMoneyAvailable('home')<176000000)
+while((ns.getServerMaxRam('xHx-24')==64)&&(ns.getServerMoneyAvailable('home')<176000000))
 {
 	ns.clearLog();
 	ns.print('.....acquiring 25 @ 128 GB servers.....');
