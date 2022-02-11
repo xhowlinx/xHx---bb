@@ -3,7 +3,7 @@
 	ns.tail();ns.clearLog();
 
 
-	var files = ['port0.js', 'port1.js', 'port2.js', 'port3.js', 'port4.js', 'port5.js', 'n00dleshack.js', 'alias.js', 'pushserv.js','delserv.js','launchupserv.js','upserv.js','intro.js','upserv2GB.js','upservmonitor.js','pushhome.js','xhx2gbhax.js'];
+	var files = ['port0.js', 'port1.js', 'port2.js', 'port3.js', 'port4.js', 'port5.js', 'n00dleshack.js', 'alias.js', 'pushserv.js','delserv.js','launchupserv.js','upserv.js','intro.js','upserv2GB.js','upservmonitor.js','pushhome.js','xhx2gbhax.js','bang-bang-shoot-em-up.js'];
 	//---------------[0]---------[1]---------[2]---------[3]---------[4]---------[5]-----------[6]-------------[7]----------[8]-----------[9]-----------[10]-------------[11]-------[12]---------[13]----------[14]---------------[15]------------
 	//.............3.60GB........3.65GB.....3.70GB.......3.75GB....3.80GB.......3.85GB........2.40GB..........1.60GB.......4.05GB.......4.35GB.........2.60GB...........8.60GB......1.60GB........6.15GB.......2.75GB............3.15GB..........
 
@@ -24,6 +24,7 @@
 	await ns.write(files[14],"/** @param {NS} ns **/export async function main(ns) {ns.tail();if(!ns.serverExists('xHx-24'))while(ns.getServerMoneyAvailable('home')<2750000){await ns.hack('n00dles');}ns.exec('upserv2GB.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==2)while(ns.getServerMoneyAvailable('home')<6000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==4)while(ns.getServerMoneyAvailable('home')<12000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==8)while(ns.getServerMoneyAvailable('home')<24000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==16)while(ns.getServerMoneyAvailable('home')<45000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==32)while(ns.getServerMoneyAvailable('home')<90000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==64)while(ns.getServerMoneyAvailable('home')<180000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==128)while(ns.getServerMoneyAvailable('home')<360000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==256)while(ns.getServerMoneyAvailable('home')<704000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');{await ns.hack('n00dles');}if(ns.getServerMaxRam('xHx-0')==512)while(ns.getServerMoneyAvailable('home')<1408000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==1024)while(ns.getServerMoneyAvailable('home')<2816000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==2048)while(ns.getServerMoneyAvailable('home')<5632000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==4096)while(ns.getServerMoneyAvailable('home')<11264000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==8192)while(ns.getServerMoneyAvailable('home')<22528000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==16384)while(ns.getServerMoneyAvailable('home')<45056000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==32768)while(ns.getServerMoneyAvailable('home')<90112000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==65536)while(ns.getServerMoneyAvailable('home')<180224000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==131072)while(ns.getServerMoneyAvailable('home')<360448000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==262144)while(ns.getServerMoneyAvailable('home')<720896000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');await ns.hack('n00dles');if(ns.getServerMaxRam('xHx-0')==524288)while(ns.getServerMoneyAvailable('home')<1441792000000){await ns.hack('n00dles');}ns.exec('upserv.js','home');}","w");
 	await ns.write(files[15],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.kill('n00dleshack.js','home');var threads = (Math.floor(ns.getServerMaxRam('home')-12)/2.4);ns.run('n00dleshack.js',threads);}","w");
 	await ns.write(files[16],"/** @param {NS} ns **/export async function main(ns) {while(true){await ns.weaken('n00dles');await ns.grow('n00dles');await ns.weaken('n00dles');await ns.hack('n00dles');}}","w");
+	await ns.write(files[17],"/** @param {NS} ns **/export async function main(ns) {while(true)if(ns.getServerSecurityLevel('joesguns')>(ns.getServerMinSecurityLevel('joesguns')+2))await ns.weaken('joesguns');else if(ns.getServerMoneyAvailable('joesguns')<(ns.getServerMaxMoney('joesguns')*.9))await ns.grow('joesguns');else await ns.hack('joesguns');}","w");
 
 
 
@@ -33,6 +34,18 @@ await ns.sleep(5000);
 ns.run('n00dleshack.js');
 if(ns.fileExists('BruteSSH.exe'))await ns.sleep(5000);
 
+//upgrade home ram and run more scripts
+
+while(ns.getServerMaxRam('home')<16)
+{
+////	ns.upgradeHomeRam();
+	ns.clearLog();
+	ns.tail();
+	ns.print('go City --> Alpha Ent. --> Upgrade home RAM');
+	ns.print('at about 13.5 minutes.');
+	await ns.hack('n00dles');
+}
+
 //check for tor router...
 
 while(!ns.serverExists('darkweb'))
@@ -41,7 +54,6 @@ while(!ns.serverExists('darkweb'))
 	ns.clearLog();
 	ns.tail();
 	ns.print('go City --> Alpha Ent. --> Purchase TOR Router');
-	ns.print('takes about 4 minutes.');
 	await ns.hack('n00dles');
 }
 
@@ -53,7 +65,6 @@ while(ns.getServerMaxRam('home')<16)
 	ns.clearLog();
 	ns.tail();
 	ns.print('go City --> Alpha Ent. --> Upgrade home RAM');
-	ns.print('at about 13.5 minutes.');
 	await ns.hack('n00dles');
 }
 
@@ -90,8 +101,6 @@ while(!ns.fileExists('Autolink.exe'))
 	ns.print('Connect Darkweb --> buy Autolink.exe');
 	ns.print('at about 18 minutes.');
 	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
-	ns.print('at around 21 minutes or level 60.');
-	ns.print('Check progress with Active Scritps tab.');
 	await ns.hack('n00dles');
 }
 
@@ -103,9 +112,7 @@ while(!ns.fileExists('FTPCrack.exe'))
 	ns.clearLog();
 	ns.tail();
 	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
-	ns.print('at around 21 minutes or level 60');
 	ns.print('Connect Darkweb --> buy FTPCrack.exe');
-	ns.print('at around 24 minutes');
 	await ns.hack('n00dles');
 }
 
@@ -205,7 +212,4 @@ while(!ns.fileExists('SQLInject.exe'))
 
 await ns.sleep(5000);
 ns.run('port5.js');
-await sleep(5000);
-ns.atExit(ns.run('upservmonitor.js'));
-
 }
