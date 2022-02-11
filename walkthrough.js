@@ -20,7 +20,7 @@
 	await ns.write(files[10],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.run('upserv.js');}","w")
 	await ns.write(files[11],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.tail();var i = 0;var ram = ns.getServerMaxRam('xHx-0');while(i<ns.getPurchasedServerLimit()){ns.killall('xHx-'+i);ns.deleteServer('xHx-'+i);ns.purchaseServer('xHx-'+i,ram*2);await ns.scp('n00dleshack.js',('xHx-'+i));ns.exec('n00dleshack.js',('xHx-'+i),((ram*2)/2.4));++i;}await ns.sleep(3000);}","w");
 	await ns.write(files[12],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.print('Welcome to:  Meat me at the N00dle Shack! Be sure to upgrade home ram and buy all the hacks from darkweb in order of availabilty.');  }","w");
-	await ns.write(files[13],"/** @param {NS} ns **/export async function main(ns) {ns.tail();var ram = 2;var i = 0;while (i < ns.getPurchasedServerLimit()) {if (ns.getServerMoneyAvailable('home') > ns.getPurchasedServerCost(ram)) {var hostname = ns.purchaseServer('xHx-' + i, ram);await ns.scp('xhx2gbhax.js', hostname);ns.exec('xhx2gbhax.js', hostname, (ram/2));++i;}}}","w");
+	await ns.write(files[13],"/** @param {NS} ns **/export async function main(ns) {ns.tail();var ram = 2;var i = 0;while (i < ns.getPurchasedServerLimit()) {if (ns.getServerMoneyAvailable('home') > ns.getPurchasedServerCost(ram)) {var hostname = ns.purchaseServer('xHx-' + i, ram);await ns.scp('xhx2gbhax.js', hostname);ns.exec('xhx2gbhax.js', hostname, (ram/2));++i;await ns.sleep(20000);}}}","w");
 	await ns.write(files[14],"/** @param {NS} ns **/export async function main(ns) {ns.tail();while(ns.getServerMoneyAvailable('home')<352000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<704000000){await ns.sleep(10000);}ns.run('upserv.js');{await ns.sleep(10000);}while(ns.getServerMoneyAvailable('home')<1408000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<2816000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<5632000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<11264000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<22528000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<45056000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<90112000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<180224000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<360448000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<720896000000){await ns.sleep(10000);}ns.run('upserv.js');while(ns.getServerMoneyAvailable('home')<1441792000000){await ns.sleep(10000);}ns.run('upserv.js');}","w");
 	await ns.write(files[15],"/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.kill('n00dleshack.js','home');var threads = (Math.floor(ns.getServerMaxRam('home')-10)/2.4);ns.run('n00dleshack.js',threads);}","w");
 	await ns.write(files[16],"/** @param {NS} ns **/export async function main(ns) {while(true){await ns.weaken('n00dles');await ns.grow('n00dles');await ns.weaken('n00dles');await ns.hack('n00dles');}}","w");
@@ -110,7 +110,7 @@ if(!ns.serverExists('xHx-24'))
 		}
 
 	ns.run('upserv2GB.js');
-	await ns.sleep(10000);
+	await ns.sleep(500000);
 	}
 
 //upgrade home ram and run more scripts
