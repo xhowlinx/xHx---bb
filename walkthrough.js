@@ -78,8 +78,8 @@ while(!ns.fileExists('Autolink.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy Autolink.exe(can use rebuy)');
-	ns.print('connect CSEC, use root on CSEC, then join faction if you like and begin hacking contracts.');
+	ns.print('Connect Darkweb --> buy Autolink.exe');
+	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
 	await ns.hack('n00dles');
 }
 
@@ -90,7 +90,8 @@ while(!ns.fileExists('FTPCrack.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy FTPCrack.exe(can use rebuy)');
+	ns.print('Connect Darkweb --> buy FTPCrack.exe');
+	ns.print('connect CSEC, use root on CSEC, then join and begin hacking contracts.');
 	await ns.hack('n00dles');
 }
 
@@ -129,7 +130,7 @@ while(!ns.fileExists('relaySMTP.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy relaySMTP.exe(can use rebuy)');
+	ns.print('Connect Darkweb --> buy relaySMTP.exe');
 	await ns.hack('n00dles');
 }
 
@@ -189,7 +190,7 @@ while(!ns.fileExists('HTTPWorm.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy HTTPWorm.exe(can use rebuy)');
+	ns.print('Connect Darkweb --> buy HTTPWorm.exe');
 	await ns.hack('n00dles');
 }
 ns.run('port4.js');
@@ -261,12 +262,16 @@ while(!ns.fileExists('SQLInject.exe'))
 
 	ns.clearLog();
 	ns.tail();
-	ns.print('Connect Darkweb --> buy SQLInject.exe(can use rebuy)');
+	ns.print('Connect Darkweb --> buy SQLInject.exe');
 	await ns.hack('n00dles');
 }
 ns.run('port5.js');
 await sleep(5000);
 ns.atExit(ns.run('upservmonitor.js'));
+
+
+
+
 
 
 }
