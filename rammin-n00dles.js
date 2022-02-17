@@ -1,6 +1,6 @@
 /** @param {NS} ns **/export async function main(ns) {
 ns.tail();
-ns.disableLog('ALL');ns.print('Keep Open and Re-size ALL Windowss With Monitor in the title. Close this window.');
+ns.disableLog('ALL');ns.print('Keep Open and Re-size ALL Windows With Monitor in the title. Close this window.');
 
 var files = ['port0.js','port1.js','port2.js','port3.js','port4.js','port5.js','pushhome.js','pushserv.js','deathMonitor.js','homeRamMonitor.js','hackingToolsMonitor.js','upservMonitor.js','n00dle-Shack.js','bang-bang-shoot-em-up.js','alias.js','purchaseServers.js','serverDelete.js','purchaseServersMonitor.js','WGn00dles.js','2GBHack.js','infiniteServersUpdate.js'];
 //line+10/value..[0]........[1]........[2]........[3]........[4]........[5].........[6]...........[7].............[8].............[9]...................[10]..................[11]................[12]..................[13]...............[14]..............[15]...............[16]...................[17].................[18]...........[19]...............
