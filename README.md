@@ -1,4 +1,8 @@
 # Meat Me At the N00dle Shack!
+
+A collection of scripts that i've scribed for the game Bitburner(https://danielyxie.github.io/bitburner/).
+
+the first one ... a plea for help to write a proper server update script....
 Meat me at the N00dle Shack!!
 a 4.20GB bitburner starting script/mini-game/?challenge?.
 
@@ -26,3 +30,17 @@ Timeline:
   times up!
 
 My solution is file walkthrough.js
+
+Turns out, that was NOT my solution.
+the file xHx-autoservers.js is the answer.
+however,
+i did not enjoy the problem of cash flow while trying to still buy 'hacks' and ram upgrades, as suggested by the 'monitors'.
+while testing a "stop upgrade?" button, i switched everthing to only hack n00dles. the time implementation of new servers by using the hack command as a timer, resulted in a 2gb basic hack that always had n00dles with a coming grow from a positive balance, creating an immortal server.
+that resulted as file 'rammin-n00dles.js
+
+to better understand the deaths, i made this file
+deathMonitor.js
+
+now i am trying for a flip/flop 100% - 0% - 100% for every tick script. will post soon.
+
+
