@@ -9,7 +9,7 @@ export async function main(ns) {
 	//..................(1.75GB).......(1.75).........(1.70).............(1.75)......(1.75).......(1.70)................................
 	await ns.write(hackFiles[0], "while(true){weaken(args);}", 'w');
 	await ns.write(hackFiles[1], "while(true){grow(args);}", 'w');
-	await ns.write(hackFiles[2], "while(true){if(getServerMoneyAvailable(args)>(getServerMaxMoney(args))*.86) hack(args);}", 'w');
+	await ns.write(hackFiles[2], "while(true){if(getServerMoneyAvailable(args)==(getServerMaxMoney(args))) hack(args);}", 'w');
 	await ns.write('ws.script', 'weaken(args)', 'w');
 	await ns.write('gs.script', 'grow(args)', 'w');
 	await ns.write('hs.script', 'hack(args)', 'w');
@@ -111,9 +111,9 @@ export async function main(ns) {
 
 	//				ns.exec('gLoop.script', (servers[s]), gLthreads, target[t]);
 	//				ns.exec('wLoop.script', (servers[s]), gLthreads, target[t]);
-					if (ns.getServerMoneyAvailable(target[t]) >= (ns.getServerMaxMoney(target[t]) * .8192)) 
+					if (ns.getServerMoneyAvailable(target[t]) == (ns.getServerMaxMoney(target[t]) )) 
 					{ ns.exec('hLoop.script', 'home', homehsthreads, target[t]); }
-					if (ns.getServerMoneyAvailable(target[t]) < (ns.getServerMaxMoney(target[t]))) {
+					if (ns.getServerMoneyAvailable(target[t]) < (ns.getServerMaxMoney(target[t]))*.99) {
 						ns.exec('gs.script', 'home', homegLthreads, target[t]);
 					}
 
@@ -128,12 +128,12 @@ export async function main(ns) {
 						ns.exec('ws.script', target[t], targetGWsThreads, target[t]);
 					}
 
-					if (ns.getServerMoneyAvailable(target[t]) < (ns.getServerMaxMoney(target[t]))*.96) {
+					if (ns.getServerMoneyAvailable(target[t]) < (ns.getServerMaxMoney(target[t]))*.99) {
 						ns.exec('gs.script', servers[s], gLthreads, target[t]);
 					}
 
 
-					if (ns.getServerMoneyAvailable(target[t]) >= (ns.getServerMaxMoney(target[t])*.8192)) {
+					if (ns.getServerMoneyAvailable(target[t]) == (ns.getServerMaxMoney(target[t]))) {
 						ns.exec('hs.script', servers[s], hsthreads, target[t]);
 					}
 
