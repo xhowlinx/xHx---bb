@@ -51,7 +51,7 @@ export async function main(ns) {
 		s = 0;
 		
 		while (s < servers.length) {
-			if(ram<=1024){var target=['n00dles','joesguns'];}
+			if(ram<=512){var target=['n00dles','joesguns'];}
 
 			else var target = ['n00dles',  'foodnstuff',  'sigma-cosmetics','joesguns', 'hong-fang-tea', 'harakiri-sushi','nectar-net'];
 			if (ns.getHackingLevel() > 600) {
