@@ -2,7 +2,7 @@
 export async function main(ns) {
 	//ns.tail();
 
-//  find all/replace  -------->   xHx  <-------- on this page BEFORE running script to set the name of purchased servers.
+
 
 	var hackFiles = ['wLoop.script', 'gLoop.script', 'hLoop.script', 'ws.script', 'gs.script', 'hs.script'];
 	//...................[0]............[1]............[2]...............[3]..........[4]..........[5].............
@@ -138,12 +138,12 @@ export async function main(ns) {
 					}
 
 					if (ns.getServerMoneyAvailable(target[t]) < (ns.getServerMaxMoney(target[t]))*.99) {
-						ns.exec('gs.script', servers[s], gLthreads, target[t]);
+						ns.exec('gs.script', servers[s], (gLthreads/target.length), target[t]);
 					}
 
 
 					if (ns.getServerMoneyAvailable(target[t]) == (ns.getServerMaxMoney(target[t]))) {
-						ns.exec('hs.script', servers[s], hsthreads, target[t]);
+						ns.exec('hs.script', servers[s], (hsthreads/target.length), target[t]);
 					}
 
 				}
