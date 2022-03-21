@@ -3,7 +3,7 @@ export async function main(ns) {
 	//ns.tail();
 
 
-
+// search/replace all on this page ------>  xHx  <-------- to set purchased server name to unique choice.
 	var hackFiles = ['wLoop.script', 'gLoop.script', 'hLoop.script', 'ws.script', 'gs.script', 'hs.script'];
 	//...................[0]............[1]............[2]...............[3]..........[4]..........[5].............
 	//..................(1.75GB).......(1.75).........(1.70).............(1.75)......(1.75).......(1.70)................................
