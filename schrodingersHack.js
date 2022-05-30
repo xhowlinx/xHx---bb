@@ -7,12 +7,12 @@ export async function main(ns) {
 	var hackFiles = ['wLoop.script', 'gLoop.script', 'hLoop.script', 'ws.script', 'gs.script', 'hs.script'];
 	//...................[0]............[1]............[2]...............[3]..........[4]..........[5].............
 	//..................(1.75GB).......(1.75).........(1.70).............(1.75)......(1.75).......(1.70)................................
-	await ns.write(hackFiles[0], "while(true){weaken(args);}", 'w');
-	await ns.write(hackFiles[1], "while(true){grow(args);}", 'w');
-	await ns.write(hackFiles[2], "while(true){if(getServerMoneyAvailable(args)==(getServerMaxMoney(args))) hack(args);}", 'w');
-	await ns.write('ws.script', 'weaken(args)', 'w');
-	await ns.write('gs.script', 'grow(args)', 'w');
-	await ns.write('hs.script', 'hack(args)', 'w');
+	await ns.write(hackFiles[0], "while(true){weaken(args[0]);}", 'w');
+	await ns.write(hackFiles[1], "while(true){grow(args[0]);}", 'w');
+	await ns.write(hackFiles[2], "while(true){if(getServerMoneyAvailable(args[0])==(getServerMaxMoney(args[0]))) hack(args[0]);}", 'w');
+	await ns.write('ws.script', 'weaken(args[0])', 'w');
+	await ns.write('gs.script', 'grow(args[0])', 'w');
+	await ns.write('hs.script', 'hack(args[0])', 'w');
 	await ns.write('healthMonitor.js', "/** @param {NS} ns **/export async function main(ns) {ns.tail();ns.disableLog('ALL');while(true){ns.clearLog();ns.print('Server  : Vitality  (Sec.Lvl:)');ns.print('home       : ',Math.floor(((ns.getServerMoneyAvailable('home'   ))*100)/100000000000),' % :',' $ ',Math.fround(ns.getServerMoneyAvailable('home'   )));ns.print('n00dles    : ',Math.floor(((ns.getServerMoneyAvailable('n00dles'))*100)/ns.getServerMaxMoney('n00dles')     ),' %    (',Math.round(ns.getServerSecurityLevel('n00dles')),' / ',ns.getServerMinSecurityLevel('n00dles'), ')');ns.print('fnstuff    : ',Math.floor(((ns.getServerMoneyAvailable('foodnstuff'))*100)/ns.getServerMaxMoney('foodnstuff')     ),' %    (',Math.round(ns.getServerSecurityLevel('foodnstuff')),' / ',ns.getServerMinSecurityLevel('foodnstuff'), ')');ns.print('sigma-c    : ',Math.floor(((ns.getServerMoneyAvailable('sigma-cosmetics'))*100)/ns.getServerMaxMoney('sigma-cosmetics')     ),' %    (',Math.round(ns.getServerSecurityLevel('sigma-cosmetics')),' / ',ns.getServerMinSecurityLevel('sigma-cosmetics'), ')');ns.print('joeguns    : ',Math.floor(((ns.getServerMoneyAvailable('joesguns'))*100)/ns.getServerMaxMoney('joesguns')     ),' %    (',Math.round(ns.getServerSecurityLevel('joesguns')),' / ',ns.getServerMinSecurityLevel('joesguns'), ')');ns.print('h-f-tea    : ',Math.floor(((ns.getServerMoneyAvailable('hong-fang-tea'))*100)/ns.getServerMaxMoney('hong-fang-tea')     ),' %    (',Math.round(ns.getServerSecurityLevel('hong-fang-tea')),' / ',ns.getServerMinSecurityLevel('hong-fang-tea'), ')');ns.print('h-sushi    : ',Math.floor(((ns.getServerMoneyAvailable('harakiri-sushi'))*100)/ns.getServerMaxMoney('harakiri-sushi')     ),' %    (',Math.round(ns.getServerSecurityLevel('harakiri-sushi')),' / ',ns.getServerMinSecurityLevel('harakiri-sushi'), ')');ns.print('nec-net    : ',Math.floor(((ns.getServerMoneyAvailable('nectar-net'))*100)/ns.getServerMaxMoney('nectar-net')     ),' %    (',Math.round(ns.getServerSecurityLevel('nectar-net')),' / ',ns.getServerMinSecurityLevel('nectar-net'), ')');await ns.sleep(.420);}}", 'w');
 	var pServFiles = ['deleteServer.js', 'purchaseServer.js', 'purchaseServerUpgrade.js', 'pushServ.js', 'stats.js', 'alias.js'];
 	//.......................[0]..............[1].......................[2]....................[3]............[4].........[5]..........
